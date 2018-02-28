@@ -1,4 +1,5 @@
 import os
+import sys
 
 # Import the necessary modules
 try:
@@ -9,7 +10,13 @@ except ImportError:
 
 # add more directories to the follwing list to search them
 # NOTE: Add paths relative to home directory
-allowed_dirs = ['Downloads', 'Documents', 'Desktop', 'Pictures', 'Music']
+allowed_dirs = ['Downloads']
+
+# Adding paths to allowed directories using the command line arguments
+if not len(sys.argv) == 1:
+    directory_list = sys.argv[1:]
+    for directory in directory_list:
+        allowed_dirs.append(directory)
 
 # maximum number of files that we need
 MAX_FILES = 10
