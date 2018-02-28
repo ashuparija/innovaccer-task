@@ -89,9 +89,9 @@ def main():
     while not pq.empty():
         file_paths.append(pq.get())
     file_paths = file_paths[::-1]
-    print('Filename - Size')
+    #print('Filename - Size')
     for file_path in file_paths:
-        print('{} - {}MB'.format(file_path[1], int(file_path[0]/(1024*1024))))
+        print('filepath : {} - filesize : {}MB'.format(file_path[1], int(file_path[0]/(1024*1024))))
 
 if __name__ == '__main__':
     main()
