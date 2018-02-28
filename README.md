@@ -1,20 +1,20 @@
 # innovaccer-task
 
-Problem statements which are solved:
+### Problem statements which are solved:
 
-Problem statement 1 : Create a program/script that should scan all the Drives and folders like C:/User/* (Windows) 
++ Problem statement 1 : Create a program/script that should scan all the Drives and folders like C:/User/* (Windows) 
 and /home/* (Linux) recursively and then identify the top 10 files which have the largest size on the system.
 
-Problem Statement 2 : The program should sort the files on Desktop on the basis of file extension and move them in 
++ Problem Statement 2 : The program should sort the files on Desktop on the basis of file extension and move them in 
 separate folders in Documents folder.  
 
-The solution presented
+### The solution presented
 
-Solution 1 : A program which can recursively scan and identify the top 10 files which have the largest size among
++ Solution 1 : A program which can recursively scan and identify the top 10 files which have the largest size among
 the allowed directories to scan. By default the program will only scan the Downloads folder but we can specify any directories
 we want the program to scan as command line inputs.
 
-Solution 2 : A program which takes source path and target path as command line arguments and then sort the files 
++ Solution 2 : A program which takes source path and target path as command line arguments and then sort the files 
 at source on the basis of file extension and move them in separate folders inside target folder. 
 NOTE : All the symlinks are ignored.
 
@@ -23,7 +23,7 @@ NOTE : All the symlinks are ignored.
 
 ### Instructions :
 
-``bash
+```bash
 # Clone this repository
 git clone https://github.com/ashuparija/innovaccer-task.git
 
